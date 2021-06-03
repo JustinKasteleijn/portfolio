@@ -1,0 +1,478 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- ======= Mobile nav toggle button ======= -->
+<!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
+            </li>
+            <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+            </li>
+            <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a>
+            </li>
+            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+            </li>
+        </ul>
+    </nav><!-- .nav-menu -->
+
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Justin Kasteleijn</h1>
+        <p>I'm <span class="typed" data-typed-items="Developer, Freelancer, Car Enthusiast"></span></p>
+        <div class="social-links">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>About</h2>
+                <p>
+                    I'm Justin, a student of the University of Applied Sciences.
+                    Here I learn all about the IT industry, mainly focusing on back end development.
+                    I care deeply about writing code that is quick, reliable and works as intended.
+
+                    My study has been 100&percnt; driven by my passion for solving problems.
+                    Programming introduced a new way to solve problems for others.
+                    Before my study I have never looked into programming, but now after {{ programming_since }} years I have fallen in love with it.
+
+                    So far I have no work experience outside of university, but I am looking to change that!
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content">
+                    <h3>Student &amp; back-end developer</h3>
+                    <p class="font-italic">
+                        Below will follow my contact details.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong>
+                                    <span>25 May 1999</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong>
+                                    <span>+31 6 81 09 44 91</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                                    <span>Gaanderen, the Netherlands</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{ age }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Working on bachelor</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>justin.kasteleijn@gmail.com</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
+                                    <span>Available</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        If you are interested in working with me please contact me to see the possibilities and opportunities for both of us!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>
+                    As a student you acquire a lot of different skills. To clarify all my current skills and experience are shown below.
+                </p>
+            </div>
+
+            <div class="row skills-content">
+
+                <div class="col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill">Java <i class="val">80&percnt;</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">SQL <i class="val">70&percnt;</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">C++ <i class="val">50%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill">PHP <i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">Algorithms and Data Structures <i class="val">70%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Resume</h2>
+                <p>
+                    This chapter will show my education and work experience so far.
+                    Not all the education and work related experiences will be IT related.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Summary</h3>
+                    <div class="resume-item pb-0">
+                        <h4>Justin Kasteleijn</h4>
+                        <p><em>Innovative and driven student with 2+ years of experience following the HBO-ICT study on the University of Applied Science.</em></p>
+                        <ul>
+                            <li>Netherlands, Gaanderen, 7011BD</li>
+                            <li>+316 81094491</li>
+                            <li>justin.kasteleijn@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume-item">
+                        <h4>Intermediate vocational education</h4>
+                        <h5>2015 - 2018</h5>
+                        <p><em>Zone college, Doetinchem</em></p>
+                        <p>This education prepares trainees for jobs that are based on manual or practical activities.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Bachelor of Computer science</h4>
+                        <h5>2018 - present</h5>
+                        <p><em>University of Applied Science, Arnhem</em></p>
+                        <p>
+                            <!--No explaining necessary-->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    <div class="resume-item">
+                        <h4>Staff at Lidl</h4>
+                        <h5>2015 - Present</h5>
+                        <p><em>Ijsselstraat 2, 7008AA, Doetinchem</em></p>
+                        <ul>
+                            <li>
+                                Supervised the start-up of a new store as assistant manager.
+                            </li>
+                            <li>
+                                Ordering products to supply for the store.
+                            </li>
+                            <li>
+                                Run the greens and vegetables department.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Freelancer</h4>
+                        <h5>2022 - Present</h5>
+                        <p><em>Netherlands, Gaanderen, 7011BD</em></p>
+                        <ul>
+                            <li>
+                                Creating and designing sites using a bootstrap template.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>
+                    I am planning to extended my knowledge in tree main categories.
+                </p>
+                <li>
+                    Apps, excluding games.
+                </li>
+                <li>
+                    Web, mainly focusing on website.
+                </li>
+                <li>
+                    Other, I will always try and accept new challenges if they are between my boundaries.
+                </li>
+                <p>
+                    This chapter will show the work I have done for previous customers.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">App</li>
+                        <li data-filter=".filter-web">Web</li>
+                        <li data-filter=".filter-card">Other</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="../static/assets/img/portfolio/economics_site_screenshot.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="../static/assets/img/portfolio/economics_site_screenshot.png" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="http://economiebijles.online/" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Services</h2>
+                <p>
+                    As a student I can offer a variety of services, nevertheless I will also be continuing my study.
+                    This may contribute to late deadlines depending on the severity of the service, difficulty of the service and current running services and university deadlines.
+                </p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box iconbox-blue">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                      d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                            </svg>
+                             <i class="bx bxl-messenger"></i>
+                        </div>
+                        <h4>Tutoring</h4>
+                        <p>For an negotiable hourly rate I will teach you about programming. The following subjects are the ones I am most familiar with</p>
+
+                        <br>
+
+                        <ul>
+                            <li>Data structures and algorithms</li>
+                            <li>Learning programming in Object Oriented fashion</li>
+                            <li>PHP, Design and program of a website</li>
+                            <li>Microsoft SQL, Design and implementation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                     data-aos-delay="200">
+                    <div class="icon-box icon-box-green">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                            </svg>
+                            <i class="bx bxl-chrome"></i>
+                        </div>
+                        <h4>Websites</h4>
+                        <p>My first project for a customer was to create a website. I really enjoyed doing this and liked the challenge, even tough web development is not my greatest asset I still enjoyed it. The result is visible in my portfolio. </p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                     data-aos-delay="200">
+                    <div class="icon-box iconbox-orange">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                            </svg>
+                            <i class="bx bx-file-blank"></i>
+                        </div>
+                        <h4>General</h4>
+                        <p>As a student and Freelancer I am always looking forward to new challenges. Therefore I always suggest you reach me with whatever problem(s) you might have. The chance is always there that I can help you or find someone else that can!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section =======
+    <section id="testimonials" class="testimonials section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Testimonials</h2>
+            </div>
+
+            <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Ceo &amp; Founder</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                risus at semper.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>  End testimonal section-->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="row mt-1">
+
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location:</h4>
+                            <p>Netherlands, Gaanderen, 7011BD, Prinses Christinastraat</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>justin.kasteleijn@gmail.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+316 81094491</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0">
+
+                    <form action="/contact" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                       required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                   required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                      required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+{% endblock content %}
