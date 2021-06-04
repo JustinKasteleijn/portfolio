@@ -27,3 +27,4 @@ class Mailer:
             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
             smtp.send_message(self.msg)
+

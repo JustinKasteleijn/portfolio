@@ -14,4 +14,4 @@ def home():
 
 @app.route('/contact')
 def send_mail():
-    Mailer().send()
+    return render_template('index.html')
