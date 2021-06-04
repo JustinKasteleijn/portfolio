@@ -1209,3 +1209,19 @@ section {
 #footer .credits {
     font-size: 13px;
 }
+
+form button[type="submit"] {
+    width: 100%;
+    background: #0563bb;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form button[type="submit"]:hover {
+    background: #0678e3;
+}
