@@ -6,4 +6,4 @@ app = Flask(__name__)
 load_dotenv()
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
-from app import routes
+import routes

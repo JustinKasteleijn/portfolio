@@ -1,8 +1,8 @@
 from flask import render_template, request, flash
 
 from app import app
-from app.mailer import Mailer
-from .date import calculate_year_from_current_date
+from mailer import Mailer
+from date import calculate_year_from_current_date
 
 
 @app.route('/', methods=['GET'])
